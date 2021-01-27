@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container main"><br>
+            <h1>Todo List</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>ADD ITEM</h3><hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Title..." id="title">
+                <p class="text-danger font-weight-bold" id="redText"></p>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Description..." id="description">
+            </div>
+            </div>
+            <div class="row">
+                <button class="btn addBtn" onclick="addTask()">Add Task</button>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-md-9 col-sm-8 col-7 dlt-all-btn">
+                    <h3>TODO</h3>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-5 dlt-all-btn">
+                    <button class="btn" onclick="deleteAll()">DELETE ALL</button>
+                </div>
+            </div><hr>
+            <div id="todo">
+
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
